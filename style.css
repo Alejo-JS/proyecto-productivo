@@ -618,31 +618,38 @@ nav ul li a:hover{
 @media only screen and (min-width: 0px) and (max-width: 430px) {
 
   
-/* 
-.abrir{
-  display: block;
-}
+  .abrir {
+    display: block;
+  }
 
+  nav {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 20vh;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+  }
 
-nav{
-  display: none;
-}
-*/
+  nav.visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
 
-nav{position: absolute;
-top: 0;
-right: 0;
-background-color: #ffffff;
-height: 100vh;
-}
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
 
-nav ul{
-  flex-direction: column;
-  align-items: end;
-}
-
-
-.cerrar{display: block;}
 
 
 
