@@ -508,7 +508,7 @@ nav ul li a:hover{
   color: #000000;
   position: absolute;
   top: 50%;
-  left: -10%;
+  left: -15%;
   transform: rotate(270deg);
   transition: 0.7s ease;
 }
@@ -519,14 +519,14 @@ nav ul li a:hover{
 }
 .details h2{
   font-family: "Jost", sans-serif;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 700;
   text-align: left;
   line-height: 44px;
   text-align: left;
   color: #000000;
   text-transform: uppercase;
-  transition: 0.7s ease;
+  transition: 0.1s ease;
   display: none;
 }
 .details p{
@@ -605,6 +605,93 @@ swiper-slide img {
   height: 300px;
 
 }
+
+#emprender{
+  margin-top: 150px;
+  background-color: #40A9E0;
+  position: relative;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+}
+
+.curva-arriba {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 210px;
+}
+
+.contenido {
+  z-index: 2;
+ }
+
+ #emprender img{
+  width: 500px;
+ }
+
+ #empre{
+  background-color: #40A6E4;
+  text-align: center;
+  
+  
+ }
+
+ #empre video{
+  width: 700px;
+  margin-bottom: 100px;
+ }
+
+
+ #efi h1{
+  font-family: helvetica;
+  color: rgb(0, 0, 0);
+  font-size: 50px;
+  font-weight: normal;
+  text-transform: capitalize;
+  margin-top: 100px;
+  margin-left: 30px;
+  border-left: #e4a547 5px solid;
+  text-align: left;
+
+}
+
+#materias{
+  background-color: #ffffff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#materias h1{
+  font-size: 36px;
+  margin-bottom: 50px;
+  color: #000000;
+  font-family: bold;
+}
+
+#materias h3{
+  font-family: bold;
+}
+
+#materias p{
+  font-family: helvetica;
+}
+
+.ma-grid{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.materia{
+  background: #e4a547;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0 , 0, 0, 0.1);
+}
+
+
 
 
 
