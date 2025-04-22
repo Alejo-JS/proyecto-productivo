@@ -691,10 +691,72 @@ swiper-slide img {
   box-shadow: 0 4px 20px rgba(0 , 0, 0, 0.1);
 }
 
+footer{
+  width: 100%;
+  background-color: #40A6E4;
+}
 
+.grupo1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
 
+figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+figure img{
+  width: 250px;
+}
 
+.grupo1 h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.grupo1 p{
+  color: #e4a547;
+  margin-bottom: 10px;
+  }
+
+.redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: white;
+  text-align: center;
+  transition: all 300ms ease;
+}
+
+.redes a:hover{
+  color: aqua;
+}
+
+.grupo2{
+  background-color: #000000;
+  padding: 15px 10px;
+  text-align: center;
+  color: white;
+}
+
+.grupo2 small{
+  font-size: 18px;
+}
 
 
 @media only screen and (min-width: 0px) and (max-width: 430px) {
@@ -804,6 +866,13 @@ swiper-slide img {
   display: block;
 }
 
+.grupo1{
+  width: 90%;
+  max-width: 1200px;
 
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 55px 0px;
+}
 
 }
