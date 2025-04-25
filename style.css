@@ -37,7 +37,9 @@ header{
 }
 
 .logo {
-    height: 50px;
+  margin: 10px 0px 10px 0px;
+
+  width: 50px;
 }
 
 nav ul{
@@ -681,7 +683,7 @@ swiper-slide img {
 .ma-grid{
   display: grid;
   gap: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .materia{
