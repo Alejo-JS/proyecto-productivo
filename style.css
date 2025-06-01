@@ -5,12 +5,12 @@
 }
 @font-face {
     font-family: bold;
-    src: url(fonts/Helvetica-Bold.ttf);
+    src: url(fonts/Kanit-Bold.ttf);
 }
 
 @font-face {
     font-family: helvetica;
-    src: url(fonts/Helvetica.ttf);
+    src: url(fonts/Kanit-Regular.ttf);
 }
 
 @font-face {
@@ -32,11 +32,11 @@ header{
 
 
 
+ #Capa_1{
+  width: 70px;
 
-svg {
-  width: 80px;
-  color: white;
 }
+
 
 nav ul{
     list-style: none;
@@ -61,12 +61,7 @@ nav ul li a:hover{
     color: #e4a547;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 30px;
-  color: #FABB5C;
-  cursor: pointer;
-}
+
 
 .abrir{ 
   display: none;
@@ -124,6 +119,7 @@ nav ul li a:hover{
     font-family: helvetica;
     text-decoration: none;
     padding: 7px 35px 7px 35px;
+    display: none;
 
 }
 
@@ -133,7 +129,6 @@ nav ul li a:hover{
 
 #quienes{
     background-color: #40A6E4;
-    text-align: center;
     padding: 50px 20px;
 }
 
@@ -141,11 +136,13 @@ nav ul li a:hover{
     font-family: bold;
     font-size: 60px;
     text-transform: capitalize;
+    text-align: right;
 }
 
 .pe{
-    border-bottom: 5px solid #FABB5C;
-  display: inline-block;}
+    border-right: 5px solid #FABB5C;
+    text-align: left;
+}
 
 
 
@@ -162,6 +159,15 @@ nav ul li a:hover{
 
 .mascota{
     width: 50%;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Capa_2{
+  width: 400px;
+  
+
 }
 
 .video video{
@@ -184,6 +190,8 @@ nav ul li a:hover{
   margin: 40px 0 2em 30px;
   text-transform: capitalize;
 }
+
+
 
 .nue{
   font-weight: bold;
@@ -649,9 +657,9 @@ swiper-slide img {
   font-weight: normal;
   text-transform: capitalize;
   margin-top: 100px;
-  margin-left: 30px;
-  border-left: #e4a547 5px solid;
-  text-align: left;
+  margin-right: 30px;
+  border-right: #e4a547 5px solid;
+  text-align: right;
 
 }
 
@@ -687,6 +695,54 @@ swiper-slide img {
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0 , 0, 0, 0.1);
+}
+
+#conocenos{
+  background-color: #40A6E4;
+  padding: 50px 0 0 0;
+  
+}
+
+.tit{
+  font-family: helvetica;
+  font-size: 50px;
+  text-align: left;
+  border-left: #e4a547 5px solid;
+  margin: 10px 0 50px 30px;
+
+}
+
+.grup{
+  display: flex;
+}
+
+.grupo{
+  width: 50%;
+  padding: 25px;
+}
+
+.grupo img{
+  border-radius: 10px;
+}
+
+.presentacion{
+  width: 50%;
+}
+
+.presentacion h2{
+  margin-top: 125px;
+  text-align: center;
+  font-family: bold;
+}
+
+.presentacion p{
+  font-family: helvetica;
+}
+
+.presentacion a{
+  font-family: helvetica;
+  text-decoration: none;
+  color: #b18449;
 }
 
 footer{
