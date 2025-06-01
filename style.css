@@ -26,15 +26,15 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #33759c;
+    background-color: #0070A4;
     padding: 10px;
 }
 
 
+.logo {
+  margin: 10px 0px 10px 0px;
 
- #Capa_1{
-  width: 70px;
-
+  width: 50px;
 }
 
 
