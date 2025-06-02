@@ -932,9 +932,18 @@ figure{
   
  }
 
+ #emprender{
+  margin-top: 150px;
+  background-color: #40A9E0;
+  position: relative;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+}
+
  #empre video{
   width: 400px;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
   border-radius: 15px;
  }
 
