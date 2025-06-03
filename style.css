@@ -32,10 +32,16 @@ header{
 
 
 
- #Capa_1{
+ #logoar{
   width: 70px;
+  
 
 }
+
+#logoar path{
+  fill: #b18449 ;
+}
+
 
 
 nav ul{
