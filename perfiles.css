@@ -39,7 +39,7 @@
 }
 
 #logoarv{
-    width: 100px;
+    width: 130px;
     margin: 0  0 0 10px;
 }
 
@@ -51,9 +51,8 @@
 
     font-size: 140px;
     font-family: chivo;
-    margin: 0px 0 0 -10px;
+    margin: 10px 0 0 -10px;
     color: antiquewhite;
-    
 }
 
 #descripcion{
