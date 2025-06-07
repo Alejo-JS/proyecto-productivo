@@ -26,7 +26,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #33759c;
+    background-color: #023D5C;
     padding: 10px;
 }
 
@@ -39,7 +39,7 @@ header{
 }
 
 #logoar path{
-  fill: #b18449 ;
+  fill: #7fbadb ;
 }
 
 
@@ -57,15 +57,16 @@ nav ul li{
 
 nav ul li a{
     text-decoration: none;
-    color: #FABB5C;
+    color: #7fbadb;
     font-weight: bold;
     font-family: bold;
-    border-bottom: 2px solid #FABB5C;
+    border-bottom: 2px solid #7fbadb;
 }
 
 nav ul li a:hover{
-    color: #e4a547;
+    color: #33759c;
 }
+
 
 
 
@@ -114,7 +115,7 @@ nav ul li a:hover{
 
 .btn{
     padding: 10px 20px;
-    background-color:#FABB5C;
+    background-color:#33759c;
     color: #002884;
     font-size: 15px;
     font-weight: bold;
@@ -130,20 +131,22 @@ nav ul li a:hover{
 }
 
 .btn:hover {
-    background-color: #e4a547;
+    background-color: #33759c ;
 }
 
 #quienes{
-    background-color: #40A6E4;
+    background-color: #023D5C;
     padding: 50px 20px;
 }
 
 #quienes h1{
+  color: #ffffff;
     font-family: bold;
     font-size: 60px;
     text-transform: capitalize;
     text-align: right;
-        border-right: 5px solid #FABB5C;
+    border-right: 5px solid #ffffff;
+    padding-right: 20px;
 
 }
 
@@ -200,29 +203,11 @@ nav ul li a:hover{
 
 .nue{
   font-weight: bold;
-  border-left: #FABB5C 5px solid;
+  border-left: #b18449 5px solid;
+  padding-left: 20px;
  
 }
-
-:root {
-    /*========== Colors ==========*/
-    /*Color mode HSL(hue, saturation, lightness)*/
-    --first-color: hsl(38, 92%, 58%);
-    --first-color-light: hsl(38, 100%, 78%);
-    --first-color-alt: hsl(32, 75%, 50%);
-    --second-color: hsl(195, 75%, 52%);
-    --dark-color: hsl(212, 40%, 12%);
-    --white-color: hsl(212, 4%, 95%);
-    --body-color: hsl(212, 42%, 15%);
-    --container-color: hsl(212, 42%, 20%);
-  
-    /*========== Font and typography ==========*/
-    /*.5rem = 8px | 1rem = 16px ...*/
-    --body-font: "Bai Jamjuree", sans-serif;
-    --h2-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-  }
-  
+ /*aqui va rooot*/
   /*=============== BASE ===============*/
   * {
     box-sizing: border-box;
@@ -270,7 +255,7 @@ nav ul li a:hover{
     height: 200px;
     max-height: 200px;
     position: relative;
-    background-color: #FABB5C;
+    background-color: #023D5C;
     padding-top: 1.5rem;
     margin-bottom: -.75rem;
      
@@ -279,7 +264,7 @@ nav ul li a:hover{
   .card__data {
     height: 200px;
     max-height: 200px;
-    background-color: #40A6E4;
+    background-color: #33759c;
     padding: 1.5rem 2rem;
     border-radius: 1rem;
     text-align: center;
@@ -310,7 +295,7 @@ nav ul li a:hover{
   
   .card__name {
     font-size: var(--h2-font-size);
-    color: white;
+    color: rgb(255, 255, 255);
     margin-bottom: .75rem;
   }
   
@@ -356,7 +341,7 @@ nav ul li a:hover{
   }
   
   .swiper-pagination-bullet {
-    background-color: hsl(212, 32%, 40%);
+    background-color: hsl(0, 0%, 100%);
     opacity: 1;
   }
   
@@ -398,7 +383,7 @@ nav ul li a:hover{
     }
   }
   .sepa {
-    background-color: #40A6E4; 
+    background-color: #023D5C; 
     color: white;
     padding: 150px 0 300px 0;
     position: relative;
@@ -410,10 +395,10 @@ nav ul li a:hover{
   color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: normal;
-  text-transform: capitalize;
   margin-top: 100px;
   margin-right: 30px;
-  border-right: #e4a547 5px solid;
+  border-right: #ffffff 5px solid;
+  padding-right: 20px;
   text-align: right;
 
 }
@@ -431,7 +416,7 @@ nav ul li a:hover{
 }
 
 .pro{
-  background: #40A6E4;
+  background: #023D5C;
   padding: 4em;
   border-radius: 10px;
   transition: transform 0.3s ease;
@@ -448,24 +433,25 @@ nav ul li a:hover{
 }
 
 .pro h2{
+  color: #7fbadb;
   margin: 1em 0;
-  font-family: bold;
+  font-family: helvetica;
   font-size: 18px;
 }
 
 .btn1{
   display: inline-block;
-  background: #2188C7;
+  background: #33759c;
   color: white;
   text-decoration: none;
-  font-family: bold;
+  font-family: helvetica;
   border-radius: 5px;
   transition: background 0.3s;
   padding: 7px 7px;
 }
 
 .btn1:hover{
-  background: #0e3d5a;
+  background: #6f8997;
 }
 
 
@@ -588,7 +574,8 @@ nav ul li a:hover{
   text-transform: capitalize;
   margin-top: 100px;
   margin-left: 30px;
-  border-left: #e4a547 5px solid;
+  border-left: #b18449 5px solid;
+  padding-left: 20px;
   text-align: left;
 
 }
@@ -619,7 +606,7 @@ swiper-slide img {
 
 #emprender{
   margin-top: 150px;
-  background-color: #40A9E0;
+  background-color: #023D5C;
   position: relative;
   height: 50vh;
   display: flex;
@@ -643,15 +630,17 @@ swiper-slide img {
  }
 
  #empre{
-  background-color: #40A6E4;
+  background-color: #023D5C;
   text-align: center;
   
   
  }
 
- #empre video{
+ #empre iframe{
   width: 700px;
+  height: 394px;
   margin-bottom: 100px;
+  border-radius: 10px;
  }
 
 
@@ -663,7 +652,8 @@ swiper-slide img {
   text-transform: capitalize;
   margin-top: 100px;
   margin-right: 30px;
-  border-right: #e4a547 5px solid;
+  border-right: #b18449 5px solid;
+  padding-right: 20px;
   text-align: right;
 
 }
@@ -677,16 +667,18 @@ swiper-slide img {
 #materias h1{
   font-size: 36px;
   margin-bottom: 50px;
-  color: #000000;
+  color: #023D5C;
   font-family: bold;
 }
 
 #materias h3{
   font-family: bold;
+  color: #023D5C;
 }
 
 #materias p{
   font-family: helvetica;
+  color: #000000;
 }
 
 .ma-grid{
@@ -696,23 +688,31 @@ swiper-slide img {
 }
 
 .materia{
-  background: #e4a547;
+  background: #7fbadb;
   padding: 20px;
   border-radius: 12px;
   box-shadow: 0 4px 20px rgba(0 , 0, 0, 0.1);
+
+}
+
+.ma-grid :hover{
+  scale: 1.05;
 }
 
 #conocenos{
-  background-color: #40A6E4;
+  background-color: #023D5C;
   padding: 50px 0 0 0;
+  padding-bottom: 300px;
   
 }
 
 .tit{
+  color: #ffffff;
   font-family: helvetica;
   font-size: 50px;
   text-align: left;
-  border-left: #e4a547 5px solid;
+  border-left: #ffffff 5px solid;
+  padding-left: 20px;
   margin: 10px 0 50px 30px;
 
 }
@@ -735,24 +735,40 @@ swiper-slide img {
 }
 
 .presentacion h2{
-  margin-top: 125px;
+  margin-top: 70px;
   text-align: center;
   font-family: bold;
+  color: #ffffff;
 }
 
 .presentacion p{
   font-family: helvetica;
+  color: #7fbadb;
+  line-height: 30px;
 }
 
 .presentacion a{
   font-family: helvetica;
   text-decoration: none;
   color: #b18449;
+  border-bottom: 2px #b18449 solid;
+  font-size: 19px;
 }
 
 footer{
   width: 100%;
-  background-color: #40A6E4;
+  background-color: #33759c;
+}
+
+.box nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.box nav a{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: helvetica;
 }
 
 .grupo1{
@@ -775,6 +791,14 @@ figure{
 
 .logo{
   width: 100px;
+}
+
+#logar{
+  width: 100px;
+}
+
+#logar path{
+  fill: #ffffff;
 }
 
 .grupo1 h2{
@@ -807,14 +831,26 @@ figure{
 }
 
 .grupo2{
-  background-color: #000000;
-  padding: 15px 10px;
+  background-color: #023D5C;
   text-align: center;
   color: white;
+  font-family: helvetica;
+  text-transform: none;
+  padding: 5px 0 5px 0;
+  
 }
 
+
 .grupo2 small{
-  font-size: 18px;
+  font-size: 22px;
+}
+
+#logov{
+  width: 12px;
+}
+
+#logov path{
+  fill: #ffffff;
 }
 
 
