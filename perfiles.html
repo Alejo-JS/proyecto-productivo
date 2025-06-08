@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>perfiles</title>
     <link rel="stylesheet" href="perfiles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 <body>
     <div id="fondo">
         <section class="arv">
-            <h1><a href="#"><svg id="logoarv" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790.05 759.59">
+            <h1 class="animate__animated animate__lightSpeedInRight animate__delay-1s"><a href="#"><svg id="logoarv" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 790.05 759.59">
          
   <g id="Campo">
     <path d="M135.76,759.57s71.61-24.57,108.46-67.53c0,0,59.35-52.52,107.1-68.89,0,0,60.63-32.06,145.97-40.25l120.04-12.28,105.68-8.34s11.38,28.39,36.63,33.84c0,0,11.82,3.33,24.08,6.05,0,0,7.01,10.48,6.27,45.18,0,0-98.32,5.11-148.12,36.15,0,0-102.65,55.92-116.98,76.06h-75.04s48.15-56,124.49-94.14c36.77-18.37,80.17-31.34,126.98-35.17l.42-3.55c-5.45-4.09-129.22,3.05-184.86,38.77,0,0-102.31,54.5-137.09,94.07h-80.15c-1-.74,87.96-74.18,115.27-87.48.54-.26,18.21-12.22,41.18-23.1,24.25-11.5,54.28-22.02,71.71-24.31,0,0,32.24-8.88,50.65-10.74,0,0,10.24-11.42-28.81-5.29,0,0-86.12,10.58-114.59,25.75.44-.28-69.55,27.37-106,54.08,0,0-36.91,27.27-47.99,35.47l-56.24,35.65h-89.07v-.02Z"  stroke-width="0"/>
@@ -28,9 +32,28 @@
         </section>
     </div>  
 
-    <div id="descripcion">
-        <p>Somos Arvia, un grupo de creadores del programa de Producción Multimedia, apasionados por la innovación, el diseño y la tecnología. Este proyecto refleja nuestras habilidades y visión como profesionales.</p>
+
+    <div id="arvia-animated">
+        <div class="animated-text-box">
+            <p class="animated-text-content">holaa, somos arvia</p>
+        </div>
+
+         <div class="animated-text-box">
+            <p class="animated-text-content">un grupo de creadores del programa de Producción Multimedia</p>
+        </div>
+
+         <div class="animated-text-box">
+            <p class="animated-text-content">apasionados por la innovación, el diseño y la tecnología.</p>
+        </div>
+
+         <div class="animated-text-box">
+            <p class="animated-text-content">Este proyecto refleja nuestras habilidades y visión como profesionales</p>
+        </div>
     </div>
+  
+
+
+
 
     <div id="mision">
         <h2>nuestra mision</h2>
@@ -55,10 +78,77 @@ el campo.
 
     </div>
 
+ 
 
     <div id="perfil">
         
     </div>
 
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+    document.addEventListener('DOMContentLoaded', function() {
+            // Animación para el texto inicial "Scroll down for the magic"
+            gsap.from(".section-intro-text", {
+                opacity: 0,
+                y: 50,
+                duration: 1,
+                ease: "power2.out",
+                scrollTrigger: {
+                    trigger: ".section-intro-text",
+                    start: "top 80%", // Cuando el top del elemento esté al 80% del viewport
+                    end: "bottom 20%",
+                    toggleActions: "play none none none", // Play on enter, do nothing on leave
+                    once: true // Solo anima una vez
+                }
+            });
+
+            // Animación para cada caja de texto
+            document.querySelectorAll('.animated-text-box').forEach(box => {
+                const textContent = box.querySelector('.animated-text-content');
+
+                // Configura el estado inicial del texto (opacidad 0, escala 0.5)
+                gsap.set(textContent, {
+                    opacity: 0,
+                    scale: 0.5,
+                    backgroundPositionX: "0%" // Posición inicial del gradiente
+                });
+
+                // Crea la animación para cada caja
+                gsap.to(textContent, {
+                    opacity: 1,
+                    scale: 1,
+                    duration: 1.2, // Duración del "pop"
+                    ease: "elastic.out(1, 0.5)", // Simula el ease-elastic de la animación original
+                    backgroundPositionX: "150%", // Anima el gradiente
+                    scrollTrigger: {
+                        trigger: box, // El trigger es la caja completa
+                        start: "top 30%", // Cuando la caja entra en el 75% del viewport
+                        end: "bottom 10%", // Cuando la caja sale del 25% del viewport
+                        toggleActions: "play none none reverse", // Play on enter, reverse on leave
+                        // markers: true // Descomentar para ver los marcadores de ScrollTrigger
+                    }
+                });
+            });
+
+        
+
+        });
+    </script>
+ </script>
+
+
+
+
+    
 </body>
 </html>
