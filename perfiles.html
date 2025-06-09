@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="perfiles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-</head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+
 </head>
 <body>
     <div id="fondo">
@@ -27,29 +27,28 @@
     <path d="M409.28.02h79.91s12.12,30.18,22.36,57.81l213.72,509.13-159.34,11.66s-21.38-66.24-28.75-84.92c0,0-91.79-338.85-128.32-333.38l.42-160.32v.02Z"  stroke-width="0"/>
     <path d="M273.67,468.13s-11.5-5.63,2.04-14.33c0,0,57.31-49.11,69.07-71.61l163.36-.52,31.72,108.46h-223.05l-43.14-22h0Z"  stroke-width="0"/>
   </g>
-</svg></a>RVIA
-            </h1>
+</svg></a>RVIA</h1>
         </section>
     </div>  
 
 
-    <div id="arvia-animated">
-        <div class="animated-text-box">
-            <p class="animated-text-content">holaa, somos arvia</p>
-        </div>
+    <div class="cinta-container">
+  <div class="cinta">
+    ⚠️ CREATIVIDAD EN PROCESO ⚠️ CREATIVIDAD EN PROCESO ⚠️ CREATIVIDAD EN PROCESO ⚠️
+  </div>
+</div>
 
-         <div class="animated-text-box">
-            <p class="animated-text-content">un grupo de creadores del programa de Producción Multimedia</p>
-        </div>
 
-         <div class="animated-text-box">
-            <p class="animated-text-content">apasionados por la innovación, el diseño y la tecnología.</p>
-        </div>
 
-         <div class="animated-text-box">
-            <p class="animated-text-content">Este proyecto refleja nuestras habilidades y visión como profesionales</p>
-        </div>
-    </div>
+<div data-scroll-delay="500" data-scroll-speed="2">
+  <p>Este elemento se desplazará con un retardo de 500ms y una velocidad de paralaje de 2.</p>
+</div>
+
+
+
+
+
+        
   
 
 
@@ -95,60 +94,3 @@ el campo.
 
 
 
- <script>
-    document.addEventListener('DOMContentLoaded', function() {
-            // Animación para el texto inicial "Scroll down for the magic"
-            gsap.from(".section-intro-text", {
-                opacity: 0,
-                y: 50,
-                duration: 1,
-                ease: "power2.out",
-                scrollTrigger: {
-                    trigger: ".section-intro-text",
-                    start: "top 80%", // Cuando el top del elemento esté al 80% del viewport
-                    end: "bottom 20%",
-                    toggleActions: "play none none none", // Play on enter, do nothing on leave
-                    once: true // Solo anima una vez
-                }
-            });
-
-            // Animación para cada caja de texto
-            document.querySelectorAll('.animated-text-box').forEach(box => {
-                const textContent = box.querySelector('.animated-text-content');
-
-                // Configura el estado inicial del texto (opacidad 0, escala 0.5)
-                gsap.set(textContent, {
-                    opacity: 0,
-                    scale: 0.5,
-                    backgroundPositionX: "0%" // Posición inicial del gradiente
-                });
-
-                // Crea la animación para cada caja
-                gsap.to(textContent, {
-                    opacity: 1,
-                    scale: 1,
-                    duration: 1.2, // Duración del "pop"
-                    ease: "elastic.out(1, 0.5)", // Simula el ease-elastic de la animación original
-                    backgroundPositionX: "150%", // Anima el gradiente
-                    scrollTrigger: {
-                        trigger: box, // El trigger es la caja completa
-                        start: "top 30%", // Cuando la caja entra en el 75% del viewport
-                        end: "bottom 10%", // Cuando la caja sale del 25% del viewport
-                        toggleActions: "play none none reverse", // Play on enter, reverse on leave
-                        // markers: true // Descomentar para ver los marcadores de ScrollTrigger
-                    }
-                });
-            });
-
-        
-
-        });
-    </script>
- </script>
-
-
-
-
-    
-</body>
-</html>
