@@ -386,9 +386,30 @@ nav ul li a:hover{
   .sepa {
     background-color: #023D5C; 
     color: white;
-    padding: 150px 0 300px 0;
+    padding: 150px 0 0 0;
     position: relative;
-    clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+}
+
+.virtual{
+  background-color: #023D5C; 
+    color: white;
+    position: relative;
+        clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+        margin: -1px 0 0 0;
+        
+
+}
+
+.virtual h1{
+  font-family: helvetica;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  font-weight: normal;
+  margin-right: 30px;
+  border-right: #ffffff 5px solid;
+  padding-right: 20px;
+  text-align: right;
 }
 
 .sepa h1 {
@@ -416,12 +437,24 @@ nav ul li a:hover{
   justify-content: center;
 }
 
+.virt{
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  padding-bottom: 100px;
+}
+
 .pro{
   background: #023D5C;
   padding: 4em;
   border-radius: 10px;
   transition: transform 0.3s ease;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
 }
 
 .pro:hover{
@@ -429,7 +462,7 @@ nav ul li a:hover{
 }
 
 .pro img{
-  width: auto;
+  width: 400px;
   border-radius: 15px;
 }
 
@@ -996,6 +1029,10 @@ figure{
   grid-template-columns: repeat(1, 1fr);
 }
 
+.virt{
+  grid-template-columns: repeat(1, 1fr);
+}
+
 #efi h1{
   font-size: 30px;
 }
@@ -1045,11 +1082,13 @@ figure{
   margin-top: 170px;
 }
 
-
+.virtual h1{
+  font-size: 30px;
+}
 
 .sepa {
 
-  clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
 .mySwiper3{
@@ -1068,5 +1107,7 @@ padding-top: 100px;}
   grid-gap: 30px;
   padding: 55px 0px;
 }
+
+.virtual
 
 }
