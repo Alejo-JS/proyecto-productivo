@@ -87,6 +87,8 @@ nav ul li a:hover{
     z-index: -10;
 }
 
+
+
 .content{
     position: absolute;
     top: 0;
@@ -256,8 +258,73 @@ nav ul li a:hover{
 
 #formacion
 
+.fgrid{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
 #objects{
+  width: 200px;
+}
+
+#bomb{
+  width: 200px;
+}
+
+.infor{
+  font-family: helvetica;
+  margin: 20px 10px 10px 10px;
+  border-radius: 20px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  background: #7fbadb;
+}
+
+.infor h1{
+  font-family: bold ;
+  color: #023D5C;
+}
+
+.infor p{
+  color: #ffffff;
+  padding: 5px;
+}
+
+
+
+#Layer_1{
   width: 250px;
+}
+
+.manito{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.man{
+  width: 50%;
+  background-color: #7fbadb;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+  border-radius: 20px;
+}
+
+.man h1{
+  font-family: bold;
+  color: #023D5C;
+}
+
+.man p{
+  padding: 0 20px 10px 20px;
+  text-align: center;
+  font-family: helvetica;
+  color: #ffffff;
 }
 
 #instructores {
@@ -460,6 +527,7 @@ nav ul li a:hover{
     }
   }
   .sepa {
+    margin-top: 100px;
     background-color: #023D5C; 
     color: white;
     padding: 150px 0 0 0;
