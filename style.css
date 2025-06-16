@@ -1281,4 +1281,35 @@ padding-top: 100px;}
   padding: 55px 0px;
 }
 
+#informacion{
+  flex-direction: column;
+
+}
+
+#informacion h2{
+  font-size: 30px;
+}
+
+.comercial iframe {
+  width: 100%;
+  height:200px;
+  padding: 0 20px 0 20px;
+  border-radius: 20px;
+}
+
+.agro{
+  flex-direction: column;
+}
+
+.intro{
+  width: 100%;
+}
+
+
+
+.foto {
+  width: 100%;
+  padding: 0;
+}
+
 }
