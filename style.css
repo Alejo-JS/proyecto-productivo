@@ -173,6 +173,12 @@ nav ul li a:hover{
 
 }
 
+.sen{
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
 .mascota{
     width: 50%;
     display: flex;
