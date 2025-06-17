@@ -256,7 +256,6 @@ nav ul li a:hover{
   margin-left: 20px;
 }
 
-#formacion
 
 .fgrid{
   display: grid;
@@ -1326,4 +1325,13 @@ padding-top: 100px;}
   width: 100%;
   text-align: left;
 }
+
+.fgrid
+{display: flex;
+flex-direction: column;}
+
+.man{
+  width: 100%;
+}
+
 }
