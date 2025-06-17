@@ -28,6 +28,8 @@ header{
     align-items: center;
     background-color: #023D5C;
     padding: 10px;
+    position: fixed;
+    width: 100%;
 }
 
 
@@ -187,7 +189,7 @@ nav ul li a:hover{
 }
 
 #Capa_2{
-  width: 300px;
+  width: 600px;
   
 
 }
