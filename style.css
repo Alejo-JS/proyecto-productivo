@@ -607,6 +607,8 @@ nav ul li a:hover{
 
 .pro img{
   width: 400px;
+  height: 200px;
+  object-fit: cover;
   border-radius: 15px;
 }
 
@@ -1312,4 +1314,16 @@ padding-top: 100px;}
   padding: 0;
 }
 
+#empre{
+  flex-direction: column;
+}
+
+#empre .videoy{
+  width: 100%;
+}
+
+#empre .infoe{
+  width: 100%;
+  text-align: left;
+}
 }
