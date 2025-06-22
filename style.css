@@ -50,11 +50,11 @@ nav ul{
     list-style: none;
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0 100px 0 0;
 }
 
 nav ul li{
-    margin: auto 50px auto 50px;
+    margin: auto 40px auto 40px;
 }
 
 nav ul li a{
@@ -79,7 +79,7 @@ nav ul li a:hover{
 .cerrar{ display: none;}
 
 #fondo{
-    background-image: url(imgs/Adobe-Express-file.webp);
+    background-image: url(imgs/fondo.webp);
     width: 100%;
     height: 87vh;
     background-size: cover;
@@ -152,17 +152,17 @@ nav ul li a:hover{
 
 #quienes{
     background-color: #023D5C;
-    padding: 50px 20px;
+    padding: 25px 40px;
 }
 
 #quienes h1{
   color: #ffffff;
     font-family: helvetica;
     font-size: 60px;
-    text-transform: capitalize;
     text-align: right;
     border-right: 5px solid #ffffff;
     padding-right: 20px;
+    margin-right: 25px;
     font-weight: normal;
 
 }
@@ -187,7 +187,7 @@ nav ul li a:hover{
 
 .sen{
   width: 100%;
-  height: 300px;
+  height: 350px;
   border-radius: 15px;
 }
 
@@ -199,7 +199,8 @@ nav ul li a:hover{
 }
 
 #Capa_2{
-  width: 600px;
+  width: 500px;
+  padding: 50px 30px;
   
 
 }
@@ -211,7 +212,8 @@ nav ul li a:hover{
 
 #informacion{
   width: 100%;
-  margin: 50px 0 0 0;
+  margin: 70px 0 0 0;
+  padding: 25px 20px;
 
 
 }
@@ -230,7 +232,7 @@ nav ul li a:hover{
   font-weight: bold;
   border-left: 5px #b18449 solid;
   padding-left: 20px;
-  margin: 0 0 0 30px;
+  margin: 0 0 0 25px;
 
 }
 
@@ -242,7 +244,7 @@ nav ul li a:hover{
 
 .comercial iframe{
   width: 700px;
-  height: 400px;
+  height: 395px;
   border-radius: 15px;
   margin-bottom: 50px;
   
@@ -274,6 +276,10 @@ nav ul li a:hover{
   margin-left: 20px;
 }
 
+#formacion{
+  padding: 25px 20px;
+  margin: 0;
+}
 
 .fgrid{
   display: grid;
@@ -291,6 +297,7 @@ nav ul li a:hover{
 .infor{
   font-family: helvetica;
   margin: 20px 10px 10px 10px;
+  
   border-radius: 20px;
   display: flex;
   text-align: center;
@@ -301,12 +308,13 @@ nav ul li a:hover{
 
 .infor h1{
   font-family: bold ;
+  font-size: 20px;
   color: #023D5C;
 }
 
 .infor p{
   color: #ffffff;
-  padding: 5px;
+  padding: 0 10px 15px 10px ;
 }
 
 
@@ -315,29 +323,36 @@ nav ul li a:hover{
   width: 250px;
 }
 
+
 .manito{
+  font-family: helvetica;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
+  padding: 0 11px 0 11px;
+
 }
 
 .man{
-  width: 50%;
+  width: 100%;
   background-color: #7fbadb;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 20px;
   border-radius: 20px;
 }
 
 .man h1{
   font-family: bold;
   color: #023D5C;
+  font-family: bold;
+  font-size: 20px;
 }
 
 .man p{
+  width: 70%;
   padding: 0 20px 10px 20px;
   text-align: center;
   font-family: helvetica;
@@ -356,20 +371,22 @@ nav ul li a:hover{
   color: black;
   font-size: 60px;
   font-weight: normal;
-  margin: 40px 0 2em 30px;
-  text-transform: capitalize;
+  margin: 40px 0 2em 45px;
+  text-align: right;
+  border-right: #b18449 5px solid;
+  padding-right: 20px;
+  margin-right: 45px;
+
 }
 
 
 
 .nue{
   font-weight: bold;
-  border-left: #b18449 5px solid;
   padding-left: 20px;
  
 }
- /*aqui va rooot*/
-  /*=============== BASE ===============*/
+
   * {
     box-sizing: border-box;
     padding: 0;
@@ -388,7 +405,6 @@ nav ul li a:hover{
     height: auto;
   }
   
-  /*=============== CARD ===============*/
   .container {
     display: flex;
     justify-content: center;
@@ -407,7 +423,7 @@ nav ul li a:hover{
   }
   
   .card__article {
-    width: 300px; /* Remove after adding swiper js */
+    width: 300px; 
     border-radius: 1.25rem;
     overflow: hidden;
   }
@@ -474,7 +490,6 @@ nav ul li a:hover{
     font-weight: 600;
   }
   
-  /* Swiper class */
     .swiper{
     visibility: visible;
 
@@ -556,8 +571,8 @@ nav ul li a:hover{
   background-color: #023D5C; 
     color: white;
     position: relative;
-        clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
-        margin: -1px 0 0 0;
+    clip-path: polygon(0 0%, 100% 0, 100% 85%, 0 100%);
+    margin: -1px 0 0 0;
         
 
 }
@@ -567,10 +582,10 @@ nav ul li a:hover{
   color: rgb(255, 255, 255);
   font-size: 60px;
   font-weight: normal;
-  margin-right: 30px;
-  border-right: #ffffff 5px solid;
-  padding-right: 20px;
-  text-align: right;
+  border-left: #ffffff 5px solid;
+  padding-left: 20px;
+  margin-left: 45px;
+  text-align: left;
 }
 
 #program h1 {
@@ -579,7 +594,7 @@ nav ul li a:hover{
   font-size: 60px;
   font-weight: normal;
   margin-top: 100px;
-  margin-right: 30px;
+  margin-right: 45px;
   border-right: #ffffff 5px solid;
   padding-right: 20px;
   text-align: right;
@@ -592,18 +607,18 @@ nav ul li a:hover{
 }
 
 .tecn{
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
 }
 
 .virt{
-  margin-top: 100px;
+  margin-top: 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .pro{
@@ -653,7 +668,7 @@ nav ul li a:hover{
 
 
 .slider-container{
-  margin-top: 50px;
+  margin-top: 100px;
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
@@ -771,12 +786,11 @@ nav ul li a:hover{
   color: rgb(0, 0, 0);
   font-size: 60px;
   font-weight: normal;
-  text-transform: capitalize;
   margin-top: 100px;
-  margin-left: 30px;
-  border-left: #b18449 5px solid;
-  padding-left: 20px;
-  text-align: left;
+  margin-right: 45px;
+  border-right: #b18449 5px solid;
+  padding-right: 20px;
+  text-align: right;
 
 }
 
@@ -804,8 +818,62 @@ swiper-slide img {
 
 }
 
+#entrevista2{
+  width: 100%;
+}
+
+#entrevista2 h2{
+  margin-top: 50px;
+
+  font-weight: normal;
+  font-family: helvetica;
+  text-align: left;
+  border-left: 5px #b18449 solid;
+  padding-left: 20px;
+  margin-left: 45px;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+#entrevista2 span{
+  font-weight: bold;
+}
+
+#entrevista1{
+  width: 100%;
+
+}
+
+#entrevista1 h2{
+  font-weight: normal;
+  font-family: helvetica;
+  text-align: left;
+  border-left: 5px #b18449 solid;
+  padding-left: 20px;
+  margin-left: 45px;
+  font-size: 60px;
+  margin-bottom: 50px;
+}
+
+#entrevista1 span{
+  font-weight: bold;
+}
+
+.entr{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.entr iframe{
+  width: 700px;
+  height: 395px;
+  border-radius: 15px;
+}
+
 #emprender{
-  margin-top: 150px;
   background-color: #023D5C;
   position: relative;
   height: 50vh;
@@ -998,10 +1066,11 @@ figure{
   background-color: white;
   text-align: center;
   transition: all 300ms ease;
+  border-radius: 10px;
 }
 
 .redes a:hover{
-  color: aqua;
+  color: #023D5C;
 }
 
 .grupo2{
