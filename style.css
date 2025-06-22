@@ -900,7 +900,7 @@ swiper-slide img {
  #empre{
   display: flex;
   background-color: #023D5C;
-  padding: 25px;
+  padding: 0px 40px 0 40px ;
   
   
  }
@@ -950,11 +950,11 @@ swiper-slide img {
 .tit{
   color: #ffffff;
   font-family: helvetica;
-  font-size: 50px;
+  font-size:60px;
   text-align: left;
   border-left: #ffffff 5px solid;
   padding-left: 20px;
-  margin: 10px 0 50px 30px;
+  margin: 10px 0 50px 45px;
 
 }
 
