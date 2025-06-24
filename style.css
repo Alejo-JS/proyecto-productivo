@@ -1103,6 +1103,20 @@ figure{
     width: 100%;
   }
 
+  #logoarv{
+    width:80px ;
+  }
+
+  .content h1{
+    font-size: 100px;
+  }
+
+  .content h2{
+    padding-top: 15px;
+    font-size: 30px;
+  }
+
+
   .abrir {
     display: block;
     background: none;
@@ -1156,9 +1170,7 @@ figure{
 
 
 
-.content h1{
-  font-size: 40px;
-}
+
 .di1{
   flex-direction: column;
   align-items: center;
@@ -1167,6 +1179,7 @@ figure{
 
 .video{
   width: 100%;
+  padding-top: 50px;
 }
 
 .mascota{
