@@ -243,8 +243,8 @@ nav ul li a:hover{
 }
 
 .comercial iframe{
-  width: 700px;
-  height: 395px;
+  width: 800px;
+  height: 450px;
   border-radius: 15px;
   margin-bottom: 50px;
   
@@ -252,7 +252,7 @@ nav ul li a:hover{
 
 .agro{
   display: flex;
-  padding: 20px;
+  padding: 20px 50px 0 50px ;
 }
 
 .intro{
@@ -260,9 +260,11 @@ nav ul li a:hover{
 }
 
 .intro p{
-  padding: 150px 20px 0  0;
+  padding: 100px 30px 0  0px;
   font-family: helvetica;
   line-height: 2;
+  font-size: 26px;
+  line-height: 2.3;
   
 }
 
@@ -277,7 +279,7 @@ nav ul li a:hover{
 }
 
 #formacion{
-  padding: 25px 20px;
+  padding: 25px 50px 0 50px;
   margin: 0;
 }
 
@@ -308,13 +310,14 @@ nav ul li a:hover{
 
 .infor h1{
   font-family: bold ;
-  font-size: 20px;
+  font-size: 35px;
   color: #023D5C;
 }
 
 .infor p{
   color: #ffffff;
-  padding: 0 10px 15px 10px ;
+  padding: 20px 90px 15px 90px ;
+  font-size: 20px;
 }
 
 
@@ -348,11 +351,12 @@ nav ul li a:hover{
   font-family: bold;
   color: #023D5C;
   font-family: bold;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .man p{
   width: 70%;
+  font-size: 20px;
   padding: 0 20px 10px 20px;
   text-align: center;
   font-family: helvetica;
@@ -688,7 +692,7 @@ nav ul li a:hover{
 }
 .slider-images img{
   width: 100%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
   border-radius: 5px;
   image-rendering: -webkit-optimize-contrast;
@@ -844,6 +848,8 @@ swiper-slide img {
 
 }
 
+
+
 #entrevista1 h2{
   font-weight: normal;
   font-family: helvetica;
@@ -868,8 +874,8 @@ swiper-slide img {
 }
 
 .entr iframe{
-  width: 700px;
-  height: 395px;
+  width: 800px;
+  height: 450px;
   border-radius: 15px;
 }
 
@@ -897,17 +903,19 @@ swiper-slide img {
   width: 500px;
  }
 
+
+
  #empre{
   display: flex;
   background-color: #023D5C;
-  padding: 0px 40px 0 40px ;
+  padding: 0px 50px 0 50px ;
   
   
  }
 
  #empre iframe{
   width: 100%;
-  height: 394px;
+  height: 450px;
   margin-bottom: 100px;
   border-radius: 10px;
  }
@@ -922,11 +930,15 @@ swiper-slide img {
   padding-left: 25px;
   line-height: 2;
   font-size: 16px;
+
  }
 
  .infoe p{
-  color: #7fbadb;
+  color: #ffffff;
   margin-top: 20px;
+  padding: 0 30px 0 30px;
+  font-size: 20px;
+  line-height: 2.3;
  }
 
 
@@ -951,12 +963,20 @@ swiper-slide img {
   color: #ffffff;
   font-family: helvetica;
   font-size:60px;
-  text-align: left;
-  border-left: #ffffff 5px solid;
-  padding-left: 20px;
-  margin: 10px 0 50px 45px;
+  text-align: right;
+  border-right: #ffffff 5px solid;
+  padding-right: 20px;
+  margin: 10px 45px 50px 45px;
+  font-weight: normal;
 
 }
+
+
+.tit span{
+  font-weight: bold;
+}
+
+
 
 .grup{
   display: flex;
@@ -1153,6 +1173,7 @@ figure{
     padding: 1rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
     transition: opacity 0.3s ease;
+    width: 100%;
   }
 
   nav.visible {
