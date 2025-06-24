@@ -118,7 +118,7 @@ nav ul li a:hover{
 
 #logoarv{
     width: 110px;
-    padding-top: 250px;
+    padding-top: 350px;
     text-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
    
 }
@@ -1099,7 +1099,10 @@ figure{
 
 @media only screen and (min-width: 0px) and (max-width: 430px) {
 
-  
+  header{
+    width: 100%;
+  }
+
   .abrir {
     display: block;
     background: none;
@@ -1364,6 +1367,16 @@ flex-direction: column;}
 
 .man{
   width: 100%;
+}
+
+.entr iframe{
+  width: 400px;
+  height: 250px;
+  padding: 0;
+}
+
+#entrevista1 h2{
+  font-size: 30px;
 }
 
 }
