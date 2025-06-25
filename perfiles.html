@@ -8,13 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
-    <script>
-  const scroll = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
-  });
-</script>
+   
 
 </head>
 <body data-scroll-container>
@@ -38,36 +32,36 @@
       
 </div>
 
+
 <div id="presentacion">
-  <section class="content">
-    <img src="imgs/grupo1.webp" alt="">
-    <div class="frase">
-      <p>Holaa, somos arvia </p>
-    </div>
-  </section>
+    <section class="panel">
+      <img src="imgs/grupo1.webp" alt="Grupo 1">
+      <div class="frase">
+        <p>Hola, somos Arvia</p>
+      </div>
+    </section>
 
-  <section class="content">
-    <img src="imgs/comercial.webp" alt="">
-    <div class="frase">
-      <p>un grupo de creadores del programa de Producción Multimedia </p>
-    </div>
-  </section>
+    <section class="panel">
+      <img src="imgs/comercial.webp" alt="Comercial">
+      <div class="frase">
+        <p>Un grupo de creadores del programa de Producción Multimedia</p>
+      </div>
+    </section>
 
-  <section class="content">
-    <img src="imgs/sena.webp" alt="">
-    <div class="frase">
-      <p>apasionados por la innovación, el diseño y la tecnología.  </p>
-    </div>
-  </section>
+    <section class="panel">
+      <img src="imgs/sena.webp" alt="Sena">
+      <div class="frase">
+        <p>Apasionados por la innovación, el diseño y la tecnología</p>
+      </div>
+    </section>
 
-  <section class="content">
-    <img src="imgs/huerta.webp" alt="">
-    <div class="frase">
-      <p>Este proyecto refleja nuestras habilidades y visión como profesionales</p>
-    </div>
-  </section>
-</div>
-
+    <section class="panel">
+      <img src="imgs/huerta.webp" alt="Huerta">
+      <div class="frase">
+        <p>Este proyecto refleja nuestras habilidades y visión como profesionales</p>
+      </div>
+    </section>
+  </div>
 
  
     
@@ -100,6 +94,30 @@ el campo.
         
     </div>
 
+
+
+
+
+
+
+
+    
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+const panels = gsap.utils.toArray(".panel");
+
+panels.forEach((panel, i) => {
+  ScrollTrigger.create({
+    trigger: panel,
+    start: "top top",
+    end: "bottom top",
+    pin: true,
+    pinSpacing: false,
+  });
+});
+
+</script>
 
 
    

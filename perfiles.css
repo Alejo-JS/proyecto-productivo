@@ -61,31 +61,34 @@ body{
     color: #ffffff;
 }
 
-#presentacion{
+#presentacion {
   width: 100%;
+}
+
+.panel {
   position: relative;
-  min-height: 400vh;
-  background-color: black;
-  display: flex;
-  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
   overflow: hidden;
 }
 
-.content{
-   position: sticky;
-   top: 0;
-   width: 100vw;
-   height: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   overflow: hidden;
-}
-
-.content img{
+.panel img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
-  z-index: 1;
+  object-fit: cover;
+  display: block;
 }
 
+.frase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  max-width: 80%;
+  border-radius: 12px;
+}
