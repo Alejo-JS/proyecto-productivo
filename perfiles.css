@@ -61,6 +61,8 @@ body{
     color: #ffffff;
 }
 
+
+
 #presentacion {
   width: 100%;
 }
@@ -70,13 +72,17 @@ body{
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  
+
 }
 
 .panel img {
+
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
+  filter: brightness(50%);
 }
 
 .frase {
@@ -91,4 +97,50 @@ body{
   text-align: center;
   max-width: 80%;
   border-radius: 12px;
+}
+
+#objetivo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 640px;
+    z-index: 10;
+}
+
+#mision{
+    width: 100%;
+    padding: 0 50px 0 60px;
+    
+}
+
+#vision{
+    width: 100%;
+    margin-top: 50px;
+        padding: 0 50px 20px 60px;
+
+}
+
+#mision h2{
+    font-family: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+#vision h2{
+    font-family: bold;
+    font-size: 30px;
+    color: #ffffff;
+}
+
+.soy{
+    background-color: #33759c;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0 40px 20px 40px;
+    
+}
+
+.soy p{
+    font-family: chivo;
+    font-size: 20px;
+    color: #000000;
 }
