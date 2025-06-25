@@ -132,7 +132,7 @@ body{
 }
 
 .soy{
-    background-color: #33759c;
+    background-color: #d8d7d7;
     text-align: center;
     border-radius: 20px;
     padding: 0 40px 20px 40px;
@@ -143,4 +143,83 @@ body{
     font-family: chivo;
     font-size: 20px;
     color: #000000;
+}
+
+#perfil {
+  width: 100%;
+  background: #f9f9f9;
+  padding: 100px 0;
+}
+
+#perfil h2 {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 60px;
+  font-family: bold;
+}
+
+.perfil {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #ddd;
+}
+
+.perfil-content {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.perfil-content.reverse {
+  flex-direction: row-reverse;
+}
+
+
+
+.perfil img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.perfil img {
+  border-radius: 50%;
+  padding: 4px;
+  background: linear-gradient(135deg, #023d5c, #ab47bc);
+  border: none;
+  position: relative;
+  z-index: 1;
+}
+
+
+.info {
+  flex: 1;
+}
+
+.info h3 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: chivo;
+  color: #023d5c;
+}
+
+.info .rol {
+    font-size: 25px;
+  color: #33759c;
+  line-height: 1.6;
+}
+
+.info p{
+    font-family: chivo;
+    font-size: 20px;
 }
