@@ -996,6 +996,8 @@ swiper-slide img {
 }
 
 .presentacion h2{
+  font-size: 50px;
+  padding-top: 15px;
   margin-top: 70px;
   text-align: center;
   font-family: bold;
@@ -1003,16 +1005,19 @@ swiper-slide img {
 }
 
 .presentacion p{
-  font-size: 16px;
+  font-size: 20px;
   font-family: helvetica;
-  color: #7fbadb;
-  line-height: 30px;
+  color: #ffffff;
+  line-height: 2;
+    padding: 20px 50px 0 50px;
+
 }
 
 .presentacion a{
   font-family: helvetica;
   text-decoration: none;
   color: #b18449;
+  margin-left: 50px;
   border-bottom: 2px #b18449 solid;
   font-size: 19px;
 }
