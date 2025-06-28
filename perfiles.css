@@ -377,5 +377,10 @@ figure{
   z-index: 1;
 }
 
+#fondo {
+    background-image: url(imgs/fondop.webp);
+    width: 100vw;
+    height: 100vh; 
   
+}
 }
