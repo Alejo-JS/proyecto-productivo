@@ -314,7 +314,7 @@ figure{
   background-color: #161616;
   text-align: center;
   color: white;
-  font-family: helvetica;
+  font-family: chivo;
   text-transform: none;
   padding: 5px 0 5px 0;
   
@@ -333,6 +333,10 @@ figure{
   fill: #ffffff;
 }
 
+.box h2{
+  letter-spacing: 3px;
+  font-family: chivo;
+}
 
 
 @media only screen and (min-width: 1920px) {
