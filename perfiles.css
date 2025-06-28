@@ -359,6 +359,10 @@ figure{
 
 @media only screen and (max-width:430px) {
 
+  #presentacion{
+    width: 100%;
+  }
+
   .arv h1{
     font-size: 100px;
     padding: 250px 0 0 70px;
@@ -404,7 +408,22 @@ figure{
 }
 
 #objetivo{
-  padding-top: 700px;
+  margin-top: 200px;
+  width: 100%;
+}
+
+#perfil{
+  width: 100%;
+}
+
+#pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 55px 0px 20px 20px;
 }
 
 }
