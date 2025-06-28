@@ -1150,7 +1150,7 @@ figure{
 }
 
 
-@media only screen and (min-width: 0px) and (max-width: 430px) {
+@media only screen and (max-width:430px) {
 
   header{
     width: 100%;

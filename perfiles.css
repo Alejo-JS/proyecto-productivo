@@ -128,11 +128,13 @@ body{
     font-family: bold;
     font-size: 30px;
     color: #ffffff;
+    letter-spacing: 4px;
 }
 
 #vision h2{
     font-family: bold;
     font-size: 30px;
+    letter-spacing: 4px;
     color: #ffffff;
 }
 
@@ -357,6 +359,18 @@ figure{
 
 @media only screen and (max-width:430px) {
 
+  .arv h1{
+    font-size: 100px;
+    padding: 250px 0 0 70px;
+    margin: 0;
+  }
+
+  #logoarv{
+   
+    width: 80px;
+    margin:0;
+  }
+
   .compu{
     display: none;
   }
@@ -383,4 +397,14 @@ figure{
     height: 100vh; 
   
 }
+
+.frase {
+  
+  width: 100%;
+}
+
+#objetivo{
+  padding-top: 700px;
+}
+
 }
