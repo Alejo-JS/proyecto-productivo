@@ -1,8 +1,14 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 @font-face {
     font-family: bold;
     src: url(fonts/Kanit-Bold.ttf);
@@ -25,7 +31,6 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: #33759c;
-    padding: 10px;
     width: 100%;
     z-index: 3;
     margin: 0;
@@ -199,19 +204,7 @@ nav ul li a:hover{
   flex-direction: column;
 }
 
-.mascota h2{
-    margin-top: 50px;
-    font-family: helvetica;
-    font-size: 25px;
-    color: #ffffff;
-  }
 
-#Capa_2{
-  width: 500px;
-  padding: 50px 30px;
-  
-
-}
 
 .video video{
     width: 100%;
@@ -226,13 +219,12 @@ nav ul li a:hover{
 
 }
 
-#informacion h2{
+.deb{
   text-align: left;
   font-family: helvetica;
   font-weight: normal;
   font-size: 60px;
   margin: 0 0 30px 0;
-  
 }
 
 .red{
@@ -278,25 +270,15 @@ nav ul li a:hover{
 
 .foto{
   width: 50%;
-  overflow: hidden;
-}
-
-.padi{
-  padding: 0 55px 0 0;
-  overflow: hidden;
+  padding-right: 20px;
 }
 
 .foto img{
   border-radius: 20px;
- width: 100%;
- height: auto;
- display: block;
- object-fit: cover;
-
+  margin-left: 20px;
 }
 
 #formacion{
-  padding: 25px 50px 0 50px;
   margin: 0;
 }
 
@@ -581,7 +563,9 @@ nav ul li a:hover{
       right: -1rem;
     }
   }
+
   #program {
+    width: 100%;
     margin-top: 100px;
     background-color: #023D5C; 
     color: white;
