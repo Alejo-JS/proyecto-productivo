@@ -67,6 +67,7 @@ nav ul li a{
     text-decoration: none;
     color: #7fbadb;
     font-weight: bold;
+    letter-spacing: 3px;
     font-family: bold;
     border-bottom: 2px solid #7fbadb;
 }
@@ -951,6 +952,7 @@ swiper-slide img {
 
  .infoe h1{
   margin-top: 20px;
+  letter-spacing: 4px;
   text-align: center;
   color: #ffffff;
   font-family: bold;
@@ -1009,6 +1011,7 @@ swiper-slide img {
   text-align: center;
   font-family: bold;
   color: #ffffff;
+  letter-spacing: 4px;
 }
 
 .presentacion p{
@@ -1155,7 +1158,7 @@ figure{
 
 @media only screen and (min-width: 1920px) {
   #logoarv{
-    padding-top: 350px;
+    padding-top: 400px;
   }
 
   header{
