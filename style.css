@@ -337,7 +337,6 @@ nav ul li a:hover{
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding: 0 11px 0 11px;
 
 }
 
@@ -1190,10 +1189,11 @@ figure{
 
   .fgrid{
     padding: 50px 40px 0 40px;
+    margin: 0;
   }
 
   .manito{
-    padding: 10px 50px 0 50px;
+    padding: 10px 51px 0 51px;
   }
 
 
