@@ -40,7 +40,8 @@ header{
 
 
  #logoar{
-  padding-left: 50px;
+  padding: 10px 10px  10px 50px;
+
   width: 120px;
   
 }
@@ -204,7 +205,18 @@ nav ul li a:hover{
   flex-direction: column;
 }
 
+.mascota h2{
+  font-size: 30px;
+  font-family: helvetica;
+  color: #ffffff;
+}
 
+.beb{
+  font-size: 60px;
+  font-family: helvetica;
+  font-weight: normal;
+  padding-left: 40px;
+}
 
 .video video{
     width: 100%;
@@ -218,13 +230,7 @@ nav ul li a:hover{
 
 }
 
-.deb{
-  text-align: left;
-  font-family: helvetica;
-  font-weight: normal;
-  font-size: 60px;
-  margin: 0 0 30px 0;
-}
+
 
 .red{
   font-family: helvetica;
@@ -246,12 +252,12 @@ nav ul li a:hover{
   height: 450px;
   border-radius: 15px;
   margin-bottom: 50px;
+  margin-top: 50px;
   
 }
 
 .agro{
   display: flex;
-  padding: 20px 50px 0 50px ;
 }
 
 .intro{
@@ -259,7 +265,7 @@ nav ul li a:hover{
 }
 
 .intro p{
-  padding: 100px 30px 0  0px;
+  padding: 100px 10px 0  50px;
   font-family: helvetica;
   line-height: 2;
   font-size: 26px;
@@ -269,12 +275,11 @@ nav ul li a:hover{
 
 .foto{
   width: 50%;
-  padding-right: 20px;
+  padding: 0 50px 0 10px ;
 }
 
 .foto img{
   border-radius: 20px;
-  margin-left: 20px;
 }
 
 #formacion{
@@ -1152,6 +1157,8 @@ figure{
      margin-left: 100px;
      border-radius: 10px;
   }
+
+  
 }
 
 
