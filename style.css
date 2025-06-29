@@ -1227,7 +1227,7 @@ figure{
     font-size: 30px; 
     color: #FABB5C; 
     cursor: pointer;
-    margin: 0 30px 0 0 ;
+    margin: 0 50px 0 0 ;
  }
 
   .cerrar{
@@ -1270,10 +1270,153 @@ figure{
     align-items: flex-end;
   }
 
+  #quienes h1{
+    margin-right: 5px;
+    padding-right: 10px;
+  }
+
+  .mascota h2{
+    padding-top: 30px;
+  }
+
+  .beb{
+    padding-left: 5px;
+  }
+
+  .comercial iframe {
+  width: 100%;
+  height:200px;
+  border-radius: 20px;
+  margin: 30px 20px 0 20px;
+}
+
+  .intro p{
+    padding: 30px 0 5px 20px;
+  }
+
+
+  .agro{
+  flex-direction: column;
+}
+
+.intro{
+  width: 100%;
+}
+
+
+
+.foto {
+  width: 100%;
+  padding: 30px 15px 0 15px;
+  text-align: center;
+  
+}
+
+.fgrid{
+  padding: 30px 6px 0 6px;
+  display: flex;
+flex-direction: column;
+}
 
 
 
 
+.man{
+  width: 100%;
+}
+
+.infor h1{
+  font-size: 30px;
+}
+
+.infor p{
+  padding: 10px 20px 10px 20px; 
+  text-align: center;
+}
+
+.manito{
+  padding: 30px 15px 0 15px;
+}
+
+.man{
+  text-align: center;
+}
+
+.man h1{
+  font-size: 30px;
+  padding: 15px;
+
+}
+
+.man p{
+  padding: 10px 20px 10px 20px;
+  width: 100%;
+}
+
+#program h1{
+  margin-right: 20px;
+  padding-right: 10px;
+    margin-top: 170px;
+
+}
+
+
+.virtual h1{
+  font-size: 30px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+#program {
+
+  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
+}
+
+.tecn{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+.virt{
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
+
+.pro{
+  width: 100%;
+}
+
+.pro img{
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+
+}
+
+.virtual{
+  margin-top: -1px;
+}
+
+
+.virt div:last-child a{
+  margin-bottom: 150px;
+}
+
+#entrevista2 h2{
+  font-size: 30px;
+  margin-left: 20px;
+  padding-left: 10px;
+}
+
+#efes h1{
+  margin-right: 20px;
+  padding-right: 10px;
+}
+
+#bof{
+  margin-top: -100px;
+}
 
 .di1{
   flex-direction: column;
@@ -1314,7 +1457,10 @@ figure{
   font-size: 30px;
 }
 
-
+.slider-container{
+  visibility: hidden;
+  margin-top: 0;
+}
 
 .curva-arriba {
   position: absolute;
@@ -1324,6 +1470,11 @@ figure{
   height: 90px;
 }
 
+.infoe {
+  padding: 0;
+}
+
+
 
  #emprender img{
   margin-top: -12px;
@@ -1331,35 +1482,70 @@ figure{
  }
 
  #empre{
-  background-color: #40A6E4;
+  background-color: #023D5C;
   text-align: center;
+   flex-direction: column;
+   padding: 0;
+
   
   
  }
 
+
+
+ .videoy{
+  width: 100%;
+  padding: 15px;
+}
+
+#empre iframe{
+  width: 100%;
+  height: 300px;
+  border-radius: 15px;
+}
+
+#empre .infoe{
+  width: 100%;
+  text-align: left;
+}
+
+
  #emprender{
   margin-top: 150px;
-  background-color: #40A9E0;
+  background-color: #023D5C;
   position: relative;
   height: 25vh;
   display: flex;
   justify-content: center;
 }
 
- #empre video{
-  width: 400px;
-  margin-bottom: 70px;
-  border-radius: 15px;
- }
-
-
-
-.tecn{
-  grid-template-columns: repeat(1, 1fr);
+.infoe h1{
+  font-size: 30px;
+  padding: 0;
 }
 
-.virt{
-  grid-template-columns: repeat(1, 1fr);
+.infoe p{
+  padding: 20px 0 10px 15x;
+  font-size: 20px;
+}
+
+
+.tit{
+  font-size: 30px;
+}
+
+.presentacion h2{
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.presentacion p{
+  padding:10px 0 0 15px;
+
+}
+
+.presentacion a{
+  margin: 0 0 0 15px;
 }
 
 #efi h1{
@@ -1385,18 +1571,11 @@ figure{
   padding: 15px;
 }
 
-.presentacion h2{
-  margin-top: 10px;
-}
 
-.tit{
-  font-size: 30px;
-}
 
-.slider-container{
-  visibility: hidden;
-  margin-top: 200px;
-}
+
+
+
 .swiper{
   visibility:visible;
 }
@@ -1404,18 +1583,6 @@ figure{
 
 
 
-#program h1{
-  margin-top: 170px;
-}
-
-.virtual h1{
-  font-size: 30px;
-}
-
-#program {
-
-  clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
-}
 
 .mySwiper3{
   margin-top: -800px;
@@ -1443,48 +1610,11 @@ padding-top: 100px;}
   font-size: 30px;
 }
 
-.comercial iframe {
-  width: 100%;
-  height:200px;
-  padding: 0 20px 0 20px;
-  border-radius: 20px;
-}
-
-.agro{
-  flex-direction: column;
-}
-
-.intro{
-  width: 100%;
-}
 
 
 
-.foto {
-  width: 100%;
-  padding: 0;
-}
 
-#empre{
-  flex-direction: column;
-}
 
-#empre .videoy{
-  width: 100%;
-}
-
-#empre .infoe{
-  width: 100%;
-  text-align: left;
-}
-
-.fgrid
-{display: flex;
-flex-direction: column;}
-
-.man{
-  width: 100%;
-}
 
 .entr iframe{
   width: 400px;
