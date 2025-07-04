@@ -15,6 +15,10 @@
     src: url(fonts/Kanit-Bold.ttf);
 }
 
+#redime{
+  display: none;
+}
+
 header {  height: 100vh;
   width: 100%;
   display: flex;
@@ -773,11 +777,11 @@ input::placeholder, textarea::placeholder{
 }
 
 
+
 footer{
-    margin-top: 200px;
   width: 100%;
-background: #0d0d0d;
-background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(13, 56, 79, 1) 48%, rgba(2, 61, 92, 1) 86%);}
+  background-color: #000000;
+}
 
 .box nav{
   display: flex;
@@ -880,9 +884,51 @@ figure{
 }
 
 
+
 }
 
+
+
+
+
+
+
+
+
 @media only screen and (max-width:430px){
+
+  header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 430px;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+  }
+
+  header h2{
+    display: block;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     form{
         padding: 50px 30px;
         width: 400px;
@@ -901,6 +947,16 @@ figure{
       flex-direction: column;
       padding: 0;
       margin: 0;
-      
+
     }
+
+    #pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 55px 0px 20px 20px;
+}
 }

@@ -112,10 +112,49 @@ html, body{
   border-radius: 12px;
 }
 
+.transition-bottom {
+  height: 60vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), #023d5c);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.transition-content {
+  text-align: center;
+  color: white;
+  font-family: chivo;
+  animation: fadeUp 1s ease-out;
+}
+
+.transition-content p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+  display: none;
+}
+
+.flecha {
+  font-size: 32px;
+  animation: bounce 1.5s infinite;
+  display: none;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+
 #objetivo{
     display: flex;
     flex-direction: column;
-    padding-top: 640px;
+    padding-top: 400px;
     z-index: 10;
 }
 
@@ -216,9 +255,7 @@ html, body{
   z-index: 1;
 }
 
-.sebas{
-  padding-top: 410px;
-}
+
 
 .info {
   flex: 1;
@@ -353,7 +390,7 @@ figure{
 @media only screen and (min-width: 1920px) {
 
   #objetivo{
-    margin-top: 400px;
+    margin-top: 0px;
   }
 
   #mision{
@@ -377,6 +414,13 @@ figure{
 
 
 }
+
+
+
+
+
+
+
 
 @media only screen and (max-width:430px) {
 
@@ -435,7 +479,7 @@ body{
 }
 
 #objetivo{
-  margin-top: 350px;
+  margin-top: 0px;
   width: 100%;
 }
 
