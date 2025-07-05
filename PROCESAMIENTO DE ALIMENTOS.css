@@ -912,6 +912,14 @@ figure{
 
   header h2{
     display: block;
+
+  }
+
+  #cgrid{
+    display: flex;
+    flex-direction: column;
+
+
   }
 
 
