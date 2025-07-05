@@ -1,0 +1,1200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+*[data-aos] {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+
+@font-face {
+    font-family: chivo;
+    src: url(fonts/Kanit-Regular.ttf);
+}
+
+@font-face {
+    font-family: bold;
+    src: url(fonts/Kanit-Bold.ttf);
+}
+
+body{
+  overflow-x: hidden;
+}
+
+#redime{
+  display: none;
+}
+
+header {  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  background-image: url(imgs/Tecnico-en-Agroindustria-alimentaria-1.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+header h1{
+    display: none;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: bold;
+}
+
+header h2 {
+    display: none;
+  font-size: 1.2rem;
+  font-family: chivo;
+}
+
+
+p, li{
+    font-family: chivo;
+    font-size: 17px;
+}
+
+#descripcion{
+    margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#descripcion h2 {text-align: center;}
+
+#descripcion p{
+    padding: 5px 0 5px 0 ;
+    font-family: chivo;
+}
+
+div h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #004d7a;
+  font-family: bold;
+  letter-spacing: 3px;
+}
+
+#perfil-egresado{
+    margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#perfil-egresado h2{
+    text-align: center;
+}
+
+#perfil-egresado p{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    
+}
+
+#competencias{
+    height: auto;
+    margin: 100px 20px 0 20px;
+    padding: 10px 20px 40px 20px;
+    max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#competencias h2{
+    text-align: center;
+}
+
+.cgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.comp{
+    background-color: #7fbadb;
+    margin: 10px 15px 10px 15px ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tex{
+    text-align: center;
+    padding: 5px  10px 5px 10px;
+}
+
+#ocupaciones{
+    margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  
+}
+
+li{
+    list-style: none;
+}
+
+.labor{
+    width: 50%;
+    background-color: #023D5C;
+            border-radius: 15px;
+            margin: 5px 15px 5px 15px;
+
+
+    
+    
+}
+
+.labor h2{
+    text-align: center;
+    color: #7fbadb;
+    padding-top: 15px;
+}
+
+.labor li{
+    color: white;
+    padding: 10px 0 1px 30px;
+}
+
+.labor ul{
+    padding-bottom: 20px;
+}
+
+.empresas{
+    width: 50%;
+        background-color: #023D5C;
+        border-radius: 15px;
+        margin: 5px 15px 5px 15px;
+
+}
+
+.empresas h2{
+    text-align: center;
+    color: #7fbadb;
+    padding-top: 15px;
+}
+
+.empresas li{
+    color: white;
+    padding: 10px 0 1px 30px;
+
+}
+
+.empresas ul{
+    padding-bottom: 20px;
+}
+
+#ingreso{
+    margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#ingreso h2, li{
+    text-align: center;
+}
+
+#duracion{
+      margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#duracion h2, p{
+    text-align: center;
+}
+
+#cta{
+    margin: 100px 20px 0 20px;
+    padding: 10px 40px 40px 40px;
+  max-width: auto;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#cta h2 {
+    text-align: center;
+}
+
+
+#cta p{
+    padding: 0px 0 40px 0;
+}
+button {
+  display: inline-block;
+  background-color: #0074b7;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+
+button:hover {
+  background-color: #39a0d8;
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form h2{
+    color: #023D5C;
+    font-size: 35px;
+    font-family: bold;
+}
+
+label{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: chivo;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #7fbadb;
+    border: 2px solid #7fbadb;
+    color: black;
+    outline: none;
+}
+
+
+input::placeholder, textarea::placeholder{
+    color: black;
+}
+
+.formtxt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.formtxt a{
+    color: #023D5C;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 17px;
+    color: #000000;
+    border: 0;
+    border-radius: 25px;
+    background-color: #33759c;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #5c92b1;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 0.5s;
+  overflow-y: auto;
+  
+}
+
+
+
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { background-color: rgba(0,0,0,0); }
+  to { background-color: rgba(0,0,0,0.6); }
+}
+
+
+
+
+footer{
+    margin-top: 200px;
+  width: 100%;
+background: #0d0d0d;
+background: linear-gradient(0deg, rgba(13, 13, 13, 1) 0%, rgba(13, 56, 79, 1) 48%, rgba(2, 61, 92, 1) 86%);}
+
+.box nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.box nav a{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+.grupo1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+}
+
+#logar{
+  width: 100px;
+}
+
+#logar path{
+  fill: #ffffff;
+}
+
+.grupo1 h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.grupo1 p{
+  color: #e4a547;
+  margin-bottom: 10px;
+  }
+
+.redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: white;
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 10px;
+}
+
+.redes a:hover{
+  color: #023D5C;
+}
+
+.grupo2{
+  background-color: #161616;
+  text-align: center;
+  color: white;
+  font-family: chivo;
+  text-transform: none;
+  padding: 5px 0 5px 0;
+  
+}
+
+
+.grupo2 small{
+  font-size: 22px;
+}
+
+#logov{
+  width: 12px;
+}
+
+#logov path{
+  fill: #ffffff;
+}
+
+.box h2{
+  letter-spacing: 3px;
+  font-family: chivo;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width:1920px){
+
+p, li{
+    font-family: chivo;
+    font-size: 20px;
+}
+    #descripcion{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#descripcion p{
+    padding: 5px 0 5px 0 ;
+    font-family: chivo;
+}
+
+div h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #004d7a;
+  font-family: bold;
+  letter-spacing: 3px;
+}
+
+#perfil-egresado{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#perfil-egresado h2{
+    text-align: center;
+}
+
+#perfil-egresado p{
+    padding: 5px 0 5px 0;
+    text-align: center;
+    
+}
+
+#competencias{
+    width: 100%;
+    height: auto;
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#competencias h2{
+    text-align: center;
+}
+
+.cgrid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.comp{
+    background-color: #7fbadb;
+    margin: 10px 15px 10px 15px ;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tex{
+    text-align: center;
+    padding: 5px  10px 5px 10px;
+}
+
+#ocupaciones{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  
+}
+
+li{
+    list-style: none;
+}
+
+.labor{
+    width: 50%;
+    background-color: #023D5C;
+            border-radius: 15px;
+            margin: 5px 15px 5px 15px;
+
+
+    
+    
+}
+
+.labor h2{
+    text-align: center;
+    color: #7fbadb;
+    padding-top: 15px;
+}
+
+.labor li{
+    color: white;
+    padding: 10px 0 1px 30px;
+}
+
+.labor ul{
+    padding-bottom: 20px;
+}
+
+.empresas{
+    width: 50%;
+        background-color: #023D5C;
+        border-radius: 15px;
+        margin: 5px 15px 5px 15px;
+
+}
+
+.empresas h2{
+    text-align: center;
+    color: #7fbadb;
+    padding-top: 15px;
+}
+
+.empresas li{
+    color: white;
+    padding: 10px 0 1px 30px;
+
+}
+
+.empresas ul{
+    padding-bottom: 20px;
+}
+
+#ingreso{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#ingreso h2, li{
+    text-align: center;
+}
+
+#duracion{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+#duracion h2, p{
+    text-align: center;
+}
+
+#cta{
+    margin: 100px 0 0 100px;
+    padding: 10px 20px 40px 40px;
+  max-width: 1700px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cta h2 {
+    text-align: center;
+}
+
+.boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta p{
+    padding: 0px 0 40px 0;
+}
+
+button {
+  display: inline-block;
+  background-color: #0074b7;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+
+
+
+button:hover {
+  background-color: #39a0d8;
+  transform: scale(1.06);
+  transition: 0.5s;
+}
+
+
+form{
+    padding: 50px 55px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    text-align: center;
+    width: 100%;
+
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+form h2{
+    color: #023D5C;
+    font-size: 35px;
+    font-family: bold;
+}
+
+label{
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: chivo;
+}
+
+input, textarea{
+    padding: 17px 25px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    background-color: #7fbadb;
+    border: 2px solid #7fbadb;
+    color: black;
+    outline: none;
+}
+
+
+input::placeholder, textarea::placeholder{
+    color: black;
+}
+
+.formtxt{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+.formtxt a{
+    color: #023D5C;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.btn{
+    font-size: 17px;
+    color: #000000;
+    border: 0;
+    border-radius: 25px;
+    background-color: #33759c;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: #5c92b1;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s;
+}
+
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { background-color: rgba(0,0,0,0); }
+  to { background-color: rgba(0,0,0,0.6); }
+}
+
+
+
+footer{
+  width: 100%;
+  background-color: #000000;
+}
+
+.box nav{
+  display: flex;
+  flex-direction: column;
+}
+
+.box nav a{
+  color: #ffffff;
+  font-size: 20px;
+  font-family: helvetica;
+  text-decoration: none;
+}
+
+.grupo1{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+figure{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+}
+
+#logar{
+  width: 100px;
+}
+
+#logar path{
+  fill: #ffffff;
+}
+
+.grupo1 h2{
+  color: white;
+  margin-bottom: 25px;
+  font-size: 20px;
+  font-family: bold;
+}
+
+.grupo1 p{
+  color: #e4a547;
+  margin-bottom: 10px;
+  }
+
+.redes a{
+  display: inline-block;
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #000000;
+  margin-right: 10px;
+  background-color: white;
+  text-align: center;
+  transition: all 300ms ease;
+  border-radius: 10px;
+}
+
+.redes a:hover{
+  color: #023D5C;
+}
+
+.grupo2{
+  background-color: #161616;
+  text-align: center;
+  color: white;
+  font-family: chivo;
+  text-transform: none;
+  padding: 5px 0 5px 0;
+  
+}
+
+
+.grupo2 small{
+  font-size: 22px;
+}
+
+#logov{
+  width: 12px;
+}
+
+#logov path{
+  fill: #ffffff;
+}
+
+.box h2{
+  letter-spacing: 3px;
+  font-family: chivo;
+}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:430px){
+
+  header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  header h2{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+
+  }
+
+  .cgrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+    #ocupaciones{
+      flex-direction: column;
+      padding:10px 20px 10px 20px;
+      margin: 0;
+      
+
+    }
+
+    .labor{
+      width: 100%;
+      margin: 0;
+      margin-top: 50px;
+    }
+  
+    .labor li{
+      padding: 0;
+    }
+
+    .empresas li{
+      padding: 0;
+    }
+
+    .empresas{
+      width: 100%;
+      margin: 0;
+      margin-top: 50px;
+    }
+
+    button{
+      display: block;
+      margin: 0 auto;
+      
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+ form{
+        width: 350px;
+    }
+
+    input{
+        padding: 15px ;
+    }
+
+    .popup-form{
+      padding: 0;
+      margin: 0;
+      width: 90%;
+
+    }
+
+  
+
+  
+  
+
+    #pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 30px;
+  padding: 55px 0px 20px 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:431px) and (max-width:767px){
+
+    header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  header h2{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+
+  }
+
+  .cgrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ocupaciones{
+    display: flex;
+    flex-direction: column;
+          padding:10px 20px 10px 20px;
+
+  }
+
+  .labor{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .empresas{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+      #pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 5px 10px 20px 0px;
+}
+
+.redes{
+  display: flex;
+
+}
+
+.box{
+  padding: 0;
+  margin: 0%;
+  width: 90%;
+}
+
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1365px){
+
+  header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  header h2{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+
+  }
+
+  #ocupaciones{
+    display: flex;
+    flex-direction: column;
+          padding:10px 20px 10px 20px;
+
+  }
+
+  .labor{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .empresas{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+
+
+}
