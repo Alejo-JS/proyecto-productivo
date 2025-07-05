@@ -5,6 +5,12 @@
 
 }
 
+*[data-aos] {
+  will-change: transform, opacity;
+  backface-visibility: hidden;
+}
+
+
 @font-face {
     font-family: chivo;
     src: url(fonts/Kanit-Regular.ttf);
@@ -13,6 +19,10 @@
 @font-face {
     font-family: bold;
     src: url(fonts/Kanit-Bold.ttf);
+}
+
+body{
+  overflow-x: hidden;
 }
 
 #redime{
@@ -95,7 +105,7 @@ div h2 {
 
 #competencias{
     height: auto;
-     margin: 100px 20px 0 20px;
+    margin: 100px 20px 0 20px;
     padding: 10px 20px 40px 20px;
     max-width: auto;
   background-color: white;
@@ -128,7 +138,7 @@ div h2 {
 }
 
 #ocupaciones{
-     margin: 100px 20px 0 20px;
+    margin: 100px 20px 0 20px;
     padding: 10px 40px 40px 40px;
   max-width: auto;
   border-radius: 12px;
@@ -192,7 +202,7 @@ li{
 }
 
 #ingreso{
-     margin: 100px 20px 0 20px;
+    margin: 100px 20px 0 20px;
     padding: 10px 40px 40px 40px;
   max-width: auto;
   background-color: white;
@@ -218,7 +228,7 @@ li{
 }
 
 #cta{
-     margin: 100px 20px 0 20px;
+    margin: 100px 20px 0 20px;
     padding: 10px 40px 40px 40px;
   max-width: auto;
   background-color: white;
@@ -582,7 +592,7 @@ div h2 {
 }
 
 #ocupaciones{
-     margin: 100px 0 0 100px;
+    margin: 100px 0 0 100px;
     padding: 10px 20px 40px 40px;
   max-width: 1700px;
   border-radius: 12px;
@@ -646,7 +656,7 @@ li{
 }
 
 #ingreso{
-     margin: 100px 0 0 100px;
+    margin: 100px 0 0 100px;
     padding: 10px 20px 40px 40px;
   max-width: 1700px;
   background-color: white;
@@ -659,7 +669,7 @@ li{
 }
 
 #duracion{
-     margin: 100px 0 0 100px;
+    margin: 100px 0 0 100px;
     padding: 10px 20px 40px 40px;
   max-width: 1700px;
   background-color: white;
@@ -995,7 +1005,7 @@ figure{
       margin: 0;
       margin-top: 50px;
     }
-   
+  
     .labor li{
       padding: 0;
     }
@@ -1010,11 +1020,11 @@ figure{
       margin-top: 50px;
     }
 
-     button{
+    button{
       display: block;
       margin: 0 auto;
       
-     }
+    }
 
 
 
@@ -1056,4 +1066,135 @@ padding-top: 100px;}
   grid-gap: 30px;
   padding: 55px 0px 20px 20px;
 }
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width:431px) and (max-width:767px){
+
+    header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  header h2{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+
+  }
+
+  .cgrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  #ocupaciones{
+    display: flex;
+    flex-direction: column;
+          padding:10px 20px 10px 20px;
+
+  }
+
+  .labor{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .empresas{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+      #pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 5px 10px 20px 0px;
+}
+
+.redes{
+  display: flex;
+
+}
+
+.box{
+  padding: 0;
+  margin: 0%;
+  width: 90%;
+}
+
+}
+
+
+
+
+
+@media (min-width:768px) and (max-width: 1365px){
+
+  header{
+    background-image: url(imgs/procesamientored.webp);
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  }
+
+  header h1{
+    display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
+  }
+
+  header h2{
+    display: block;
+    color: #ffffff;
+    font-size: 30px;
+
+  }
+
+  #ocupaciones{
+    display: flex;
+    flex-direction: column;
+          padding:10px 20px 10px 20px;
+
+  }
+
+  .labor{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+  .empresas{
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+  }
+
+
+
 }
