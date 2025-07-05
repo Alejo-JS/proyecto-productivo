@@ -224,22 +224,20 @@ li{
   background-color: white;
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 #cta h2 {
     text-align: center;
 }
 
-.boton{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 #cta p{
     padding: 0px 0 40px 0;
 }
-
 button {
   display: inline-block;
   background-color: #0074b7;
@@ -256,7 +254,9 @@ button {
 
 
 button:hover {
-  background-color: #005f91;
+  background-color: #39a0d8;
+  transform: scale(1.06);
+  transition: 0.5s;
 }
 
 
@@ -265,7 +265,7 @@ form{
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 20px;
     text-align: center;
-    width: 500px;
+    width: 100%;
 
 }
 
@@ -332,6 +332,55 @@ input::placeholder, textarea::placeholder{
 .btn:hover{
     background-color: #5c92b1;
 }
+
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: flex-start;
+  animation: fadeIn 0.5s;
+  overflow-y: auto;
+  
+}
+
+
+
+.popup-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 16px;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  position: relative;
+  animation: slideUp 0.4s ease;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(50px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+  from { background-color: rgba(0,0,0,0); }
+  to { background-color: rgba(0,0,0,0.6); }
+}
+
+
 
 
 footer{
@@ -439,6 +488,15 @@ figure{
   letter-spacing: 3px;
   font-family: chivo;
 }
+
+
+
+
+
+
+
+
+
 
 
 @media only screen and (min-width:1920px){
@@ -902,26 +960,61 @@ figure{
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  width: 430px;
+  width: 100%;
   height: 100vh;
   }
 
   header h1{
     display: block;
+    color: #ffffff;
+    letter-spacing: 2px;
   }
 
   header h2{
     display: block;
+    color: #ffffff;
+    font-size: 30px;
 
   }
 
-  #cgrid{
+  .cgrid{
     display: flex;
     flex-direction: column;
-
-
   }
 
+    #ocupaciones{
+      flex-direction: column;
+      padding:10px 20px 10px 20px;
+      margin: 0;
+      
+
+    }
+
+    .labor{
+      width: 100%;
+      margin: 0;
+      margin-top: 50px;
+    }
+   
+    .labor li{
+      padding: 0;
+    }
+
+    .empresas li{
+      padding: 0;
+    }
+
+    .empresas{
+      width: 100%;
+      margin: 0;
+      margin-top: 50px;
+    }
+
+     button{
+      display: block;
+      margin: 0 auto;
+      
+     }
 
 
 
@@ -934,29 +1027,25 @@ figure{
 
 
 
-
-
-
-    form{
-        padding: 50px 30px;
-        width: 400px;
+ form{
+        width: 350px;
     }
 
     input{
         padding: 15px ;
     }
 
-    .empresas h2{
-      font-size: 18px;
+    .popup-form{
+      padding: 0;
+      margin: 0;
+      width: 90%;
+
     }
 
   
-    #ocupaciones{
-      flex-direction: column;
-      padding: 0;
-      margin: 0;
 
-    }
+  
+  
 
     #pie{
 padding-top: 100px;}
