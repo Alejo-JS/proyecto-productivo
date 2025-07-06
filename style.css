@@ -73,10 +73,13 @@ nav ul li a{
 }
 
 nav ul li a:hover{
-    color: #33759c;
+    color: rgb(192, 209, 219);
 }
 
-
+nav ul:hover{
+  transform: scale(1);
+  transition: 1s;
+}
 
 
 .abrir{ 
@@ -117,15 +120,16 @@ nav ul li a:hover{
 }
 
 .agr {
-  margin-top: -40px;
+  margin-top: -50px;
   font-family: helvetica;
   font-weight: normal;
   font-size: 40px;
 }
 
 #logoarv{
-    width: 110px;
-    padding-top: 350px;
+
+    width: 520px;
+    padding-top: 200px;
     text-shadow: 2px 2px 10px rgb(0, 0, 0, 0.5);
    
 }
@@ -399,12 +403,6 @@ nav ul li a:hover{
  
 }
 
-  * {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-  }
-  
 
   
   a {
@@ -429,6 +427,7 @@ nav ul li a:hover{
   }
   
   .card__content {
+    width: 800px;
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
@@ -450,6 +449,7 @@ nav ul li a:hover{
      
   }
   
+
   .card__data {
     height: 200px;
     max-height: 200px;
@@ -462,7 +462,7 @@ nav ul li a:hover{
   }
   
   .card__img {
-    width: 180px;
+    width: 250px;
     margin: 0 auto;
     position: relative;
     z-index: 5;
@@ -486,11 +486,16 @@ nav ul li a:hover{
     font-size: var(--h2-font-size);
     color: rgb(255, 255, 255);
     margin-bottom: .75rem;
+    font-family: bold;
+    font-size: 25px;
+    letter-spacing: 2px;
   }
   
   .card__description {
     font-weight: 500;
     margin-bottom: 1.75rem;
+    font-family: helvetica;
+    font-size: 18px;
   }
   
   .card__button {
@@ -536,6 +541,44 @@ nav ul li a:hover{
   .swiper-pagination-bullet-active {
     background-color: var(--second-color);
   }
+
+  #cortometraje{
+  width: 100%;
+  margin: 70px 0 0 0;
+
+
+}
+
+.bebe{
+  font-size: 60px;
+  font-family: helvetica;
+  font-weight: normal;
+  padding-left: 40px;
+  text-align: center;
+}
+
+.reda{
+  font-family: helvetica;
+  font-weight: bold;
+  padding-left: 20px;
+  margin: 0 0 0 25px;
+
+}
+
+.comercial{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comercial iframe{
+  width: 800px;
+  height: 450px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  
+}
   
   /*=============== BREAKPOINTS ===============*/
   /* For small devices */
@@ -652,8 +695,8 @@ nav ul li a:hover{
 }
 
 .pro img{
-  width: 400px;
-  height: 200px;
+  width: 500px;
+  height: 300px;
   object-fit: cover;
   border-radius: 15px;
 }
@@ -662,7 +705,7 @@ nav ul li a:hover{
   color: #7fbadb;
   margin: 1em 0;
   font-family: helvetica;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .btn1{
@@ -960,7 +1003,10 @@ swiper-slide img {
  }
 
  
-
+.infoe a{
+  color: #b18449;
+  text-decoration: underline;
+}
 
 #conocenos{
   background-color: #023D5C;
@@ -1139,15 +1185,19 @@ figure{
 
 @media only screen and (min-width: 1366px) {
 
-  #logoarv{
-    padding-top: 230px;
-  }
+ 
 
   .intro p{
   padding: 100px 30px 0  0px;
   font-family: helvetica;
   line-height: 2;
   font-size: 20px;
+
+  }
+
+  .pro img{
+    width: 400px;
+    height: 200px;
   }
 
   
@@ -1275,6 +1325,11 @@ figure{
 
   .presentacion a{
     margin-left: 25px;
+  }
+
+   .pro img{
+    width: 500px;
+    height: 300px;
   }
 
 }
@@ -1728,6 +1783,239 @@ padding-top: 100px;}
 
 #entrevista1 h2{
   font-size: 30px;
+}
+
+}
+
+
+
+@media (min-width:431px) and (max-width:767px){
+  
+  .abrir {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px; 
+    color: #FABB5C; 
+    cursor: pointer;
+    margin: 0 50px 0 0 ;
+ }
+
+  .cerrar{
+    display: block;
+    background: none;
+    border: none;
+    font-size: 30px; 
+    color: #FABB5C; 
+    cursor: pointer;
+    margin: 0 30px 0 0 ;
+
+  }
+
+  nav {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #0070A4;
+    height: 20vh;
+    padding: 1rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.6);
+    transition: opacity 0.3s ease;
+    width: 100%;
+  }
+
+  nav.visible {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  #logoar{
+    width: 150px;
+  }
+
+  #logoarv{
+    padding-top: 450px;
+  }
+
+  .di1{
+    flex-direction: column;
+  }
+
+  .pep{
+    width: 700px;
+  }
+
+  .video iframe{
+    margin-top: 80px;
+  }
+
+  .mascota h2{
+    padding-top: 40px;
+  }
+
+  .comercial iframe{
+    width: 600px;
+    height: 350px;
+  }
+
+  .agro{
+    flex-direction: column;
+  }
+
+  .intro{
+    width: 100%;
+  }
+
+  .foto{
+    width: 100%;
+  }
+
+  .fgrid{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .infor{
+    width: 100%;
+  }
+
+  .manito{
+  }
+
+  .man{
+    padding: 0;
+  }
+
+  .tecn{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+    .virt{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .virt div:last-child a{
+  margin-bottom: 150px;
+}
+
+.card__content {
+      margin-inline: 3rem;
+    }
+  
+    .swiper-button-next,
+    .swiper-button-prev {
+      display: block;
+    }
+
+    .entr iframe{
+      width: 700px;
+    }
+
+    
+.slider-container{
+  visibility: hidden;
+  margin-top: 0;
+}
+
+.mySwiper3{
+  margin-top: -1000px;
+  display: block;
+}
+
+   #emprender{
+  margin-top: 150px;
+  background-color: #023D5C;
+  position: relative;
+  height: 25vh;
+  display: flex;
+  justify-content: center;
+}
+
+#empre{
+  flex-direction: column;
+}
+
+.videoy{
+  width: 100%;
+}
+
+.infoe{
+  width: 100%;
+}
+
+.curva-arriba{
+  height: 160px;
+}
+
+#emprender img{
+  margin-top: -50px;
+}
+
+.infoe{
+  padding-bottom: 50px;
+}
+
+.grup{
+  flex-direction: column;
+}
+
+.grupo{
+  width: 100%;
+}
+
+.presentacion{
+  width: 100%;
+  padding-left: 30px;
+}
+
+      #pie{
+padding-top: 100px;}
+
+.grupo1{
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  padding: 5px 10px 20px 0px;
+}
+
+.redes{
+  display: flex;
+
+}
+
+.box{
+  padding: 0;
+  margin: 0%;
+  width: 90%;
+}
+
+}
+
+
+
+
+@media (min-width:768px) and (max-width:1365px){
+  .pro img{
+  width: 400px;
+  height: 200px;
+}
+
+#logoarv{
+  padding-top: 400px;
 }
 
 }
