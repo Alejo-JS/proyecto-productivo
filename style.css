@@ -427,7 +427,7 @@ nav ul:hover{
   }
   
   .card__content {
-    width: 800px;
+    width: 92%;
     margin-inline: 1.75rem;
     border-radius: 1.25rem;
     overflow: hidden;
@@ -1568,6 +1568,8 @@ flex-direction: column;
   padding-left: 10px;
 }
 
+
+
 .beb{
   font-size: 30px;
 }
@@ -1606,6 +1608,10 @@ flex-direction: column;
 #Capa_2{
 
   width: 300px;
+}
+
+#instructores{
+  height: auto;
 }
 
 #instructores h1{
