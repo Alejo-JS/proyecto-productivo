@@ -384,16 +384,12 @@ figure{
 
 @media only screen and (min-width: 1920px) {
 
-  #objetivo{
-    margin-top: 100px 0 50px 0; 
-  }
 
-  #mision{
-    padding: 0 250px 0 260px;
-  }
+
+ 
 
   #vision{
-        padding: 0 150px 0 160px;
+    padding: 100px 250px 50px 260px;
 
   }
 
