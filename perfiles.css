@@ -476,6 +476,12 @@ body{
 #objetivo{
   margin-top: 0px;
   width: 100%;
+  flex-direction: column;
+}
+
+#vision{
+  width: 100%;
+  padding-top: 50px;
 }
 
 #perfil{
