@@ -119,7 +119,7 @@ nav ul:hover{
     font-weight: bold;
 }
 
-.agr {
+#agr {
   margin-top: -50px;
   font-family: helvetica;
   font-weight: normal;
@@ -162,7 +162,7 @@ nav ul:hover{
 
 #quienes{
     background-color: #023D5C;
-    padding: 0 50px 0 50px ;
+    padding: 50px 50px 0 50px ;
 }
 
 #quienes h1{
@@ -176,6 +176,8 @@ nav ul:hover{
     font-weight: normal;
 
 }
+
+
 
 #quienes .pe{
   font-weight: bold;
@@ -345,7 +347,7 @@ nav ul:hover{
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  padding: 0 40px 0 40px;
+  padding: 0 58px 0 58px;
 
 }
 
@@ -544,6 +546,7 @@ nav ul:hover{
   #cortometraje{
   width: 100%;
   margin: 70px 0 0 0;
+  text-align: center;
 
 
 }
@@ -1226,7 +1229,7 @@ figure{
   }
 
   #quienes{
-    padding: 0  50px 0 50px;
+    padding: 50px  50px 0 50px;
   }
 
 
@@ -1537,7 +1540,8 @@ flex-direction: column;
   padding-left: 10px;
 }
 
-#program {
+#program { 
+  padding: 150px 0 0 0;
 
   clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
@@ -1550,7 +1554,9 @@ flex-direction: column;
   grid-template-columns: repeat(1, 1fr);
 }
 
-
+.virtual{
+  padding: 0;
+}
 
 .pro{
   width: 100%;
@@ -1568,6 +1574,9 @@ flex-direction: column;
   margin-top: -1px;
 }
 
+#informacion{
+  padding: 0;
+}
 
 .virt div:last-child a{
   margin-bottom: 150px;
@@ -1623,6 +1632,7 @@ flex-direction: column;
 
 #instructores{
   height: auto;
+  padding: 0;
 }
 
 #instructores h1{
@@ -1647,7 +1657,15 @@ flex-direction: column;
   margin-top: 0;
 }
 
+.bebe{
+  font-size: 30px;
+  padding: 0;
+}
 
+.reda{
+  margin: 0;
+  padding: 0;
+}
 
 .curva-arriba {
   position: absolute;
@@ -1767,7 +1785,9 @@ flex-direction: column;
   visibility:visible;
 }
 
-
+#conocenos {
+  padding: 50px 0 100px 0;
+}
 
 
 
