@@ -385,7 +385,7 @@ figure{
 @media only screen and (min-width: 1920px) {
 
   #objetivo{
-    margin-top: 0px;
+    margin-top: 100px 0 50px 0; 
   }
 
   #mision{
