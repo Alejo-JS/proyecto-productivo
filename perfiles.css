@@ -274,7 +274,50 @@ html, body{
     font-size: 20px;
 }
 
+#sena{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  display: none;
+}
 
+#sena h1{
+  font-size: 50px;
+  text-align: center;
+  font-family: chivo;
+  color: #023D5C;
+}
+
+#nost{
+  display: flex;
+  padding: 50px 50px 150px 70px;
+}
+
+.discurso {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+
+.discurso p{
+  font-family: chivo;
+  font-size: 20px;
+}
+
+.nostalgia{
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nostalgia iframe{
+  border-radius: 25px;
+  margin-left: 90px;
+}
 
 footer{
   width: 100%;
