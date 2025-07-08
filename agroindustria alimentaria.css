@@ -1158,7 +1158,7 @@ padding-top: 100px;}
 
 
 
-@media (min-width:768px) and (max-width: 1365px){
+@media (min-width:768px) and (max-width: 1024px){
 
   header{
     background-image: url(imgs/procesamientored.webp);
